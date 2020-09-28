@@ -1,0 +1,19 @@
+<%- include("partials/adminHeader") %>
+<div class="container">
+  <h1>Add a NEWS</h1>
+  <form class="" action="addNewNews" method="post">
+    <div class="form-group">
+      <label>Title</label>
+      <input type="text" class="form-control" name="title" value="" autocomplete="off" required>
+      <label>News</label>
+      <textarea class="form-control" name="content" rows="5" cols="30" required></textarea>
+      <!-- <input id="sendEmail" type="checkbox"> -->
+      <!-- <label for="sendEmail" name="sendEmail" value="yes">Email NEWS</label> -->
+    </div>
+
+    <button type="submit" class="btn btn-default" name="button">Publish</button>
+  </form>
+
+</div>
+
+<%- include("partials/footer") %>

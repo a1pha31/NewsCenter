@@ -1,0 +1,12 @@
+<%- include("partials/adminHeader") %>
+
+<h1>Hello <%= name %></h1>
+<div class="home">
+  <% list.reverse().forEach(function(i){ %>
+    <h3><%= i.title %></h3>
+    <p><%= i.date %></p>
+    <p><%= i.content.substring(0,100) %>...<a href="/adminNews/<%=i.title %>">Read More</a></p>
+  <% }); %>
+</div>
+
+<%- include('partials/footer') %>
